@@ -7,7 +7,7 @@ with open("requirements.txt", "r") as fil:
 
 setuptools.setup(
     name="mediafile_renamator",
-    version="0.0.1",
+    version="0.0.2",
     author="Filip Klopec",
     author_email="filipklopec@gmail.com",
     description="Mediafile Renamator is an application for renaming media files like movies, TV shows and music.",

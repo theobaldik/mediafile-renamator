@@ -2,7 +2,7 @@ import os
 import json
 import logger
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 MFR_ROOT = os.path.join(os.getenv('APPDATA'), 'Fat Camel Studio', 'Mediafile Renamator')
 try:
@@ -21,11 +21,14 @@ formats = ['plex']
 DEFAULT_FORMATTING = 'plex'
 DEFAULT_SUBTITLES_LANG = 'cs'
 
+TMDB_API_KEY = ''
+
 def create_default_config():
     """Creates configuration file using default setting."""
     config_dict = {
         'default-formatting': DEFAULT_FORMATTING,
-        'default-subtitles-lang': DEFAULT_SUBTITLES_LANG
+        'default-subtitles-lang': DEFAULT_SUBTITLES_LANG,
+        'tmdb-api-key' : TMDB_API_KEY
     }
     try:
         with open(CONFIG_PATH, 'w') as fil:
@@ -35,12 +38,13 @@ def create_default_config():
 
 def load_constants():
     """Loads settings from configuration file."""
-    global DEFAULT_FORMATTING, DEFAULT_SUBTITLES_LANG
+    global DEFAULT_FORMATTING, DEFAULT_SUBTITLES_LANG, TMDB_API_KEY
     try:
         with open(CONFIG_PATH, 'r') as fil:
             json_fil = json.load(fil)
             DEFAULT_FORMATTING = json_fil['default-formatting']
-            DEFAULT_SUBTITLES_LANG = json_fil['default-subtitles-lang']            
+            DEFAULT_SUBTITLES_LANG = json_fil['default-subtitles-lang']
+            TMDB_API_KEY = json_fil['tmdb-api-key']
     except FileNotFoundError:
         create_default_config()
     except:
