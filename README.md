@@ -14,7 +14,7 @@ Mediafile Renamator is a basic application for renaming media files like movies,
 The easiest way to install MFR on your computer is just download the executable file matching your OS in [Releases](https://gitlab.com/Theobaldik/mediafile-renamator/-/releases).
 You can also use these download links for latest version of MFR:
 
-- **Windows**: **[mfr.exe]()**
+- **Windows**: **[mfr_0_0_2.exe](https://gitlab.com/Theobaldik/mediafile-renamator/uploads/885446693f756ce0d824e6cdbbe412ec/mfr_0_0_2.exe)**
 - **Linux**: not available yet
 - **Mac OS**: not available yet
 
@@ -24,7 +24,8 @@ You can also use pip to install MFR to your comuputer using [setup.py](/setup.py
 
 ## Usage
 
-Make sure you are in MFR directory or you added the directory to system path.
+
+Make sure you are in MFR directory or you added the directory to system path. Rename the executable (e.g. *mfr_0_0_2.exe*) to *mfr*.
 
 Run `mfr <DIRECTORY>` in command line or terminal to rename all files within this directory.
 
