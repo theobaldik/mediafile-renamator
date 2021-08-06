@@ -11,10 +11,10 @@ Mediafile Renamator is a basic application for renaming media files like movies,
 
 ## Installing MFR
 
-The easiest way to install MFR on your computer is just download the archive folder withing the [bin](/bin) matching the OS you use. Then you extract the folder and run *mfr* using terminal or command line within the MFR folder.
-You can also use these download links:
+The easiest way to install MFR on your computer is just download the executable file matching your OS in [Releases](https://gitlab.com/Theobaldik/mediafile-renamator/-/releases).
+You can also use these download links for latest version of MFR:
 
-- **Windows (zip archive)**: **[mfr_0_0_2.zip](https://gitlab.com/Theobaldik/mediafile-renamator/-/raw/master/bin/mfr_0_0_2.zip)**
+- **Windows**: **[mfr.exe]()**
 - **Linux**: not available yet
 - **Mac OS**: not available yet
 
